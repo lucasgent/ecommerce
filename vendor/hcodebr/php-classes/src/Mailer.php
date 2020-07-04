@@ -6,9 +6,9 @@ use Rain\Tpl;
 
 class Mailer {
 
-	 const USERNAME = "lucasgentile7plus@gmail.com";
-	 const PASSWORD = "lucas2008";
-	 const NAME_FROM ="Lucas Gentile";
+	 const USERNAME = "oooo";
+	 const PASSWORD = "oooooo";
+	 const NAME_FROM ="ooooo";
 
 	 private $mail;
 
