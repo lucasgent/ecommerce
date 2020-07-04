@@ -6,9 +6,9 @@ use Rain\Tpl;
 
 class Mailer {
 
-	 const USERNAME = "lucasfortnite8plus@gmail.com";
-	 const PASSWORD = "tutai2008";
-	 const NAME_FROM ="lucas";
+	 const USERNAME = "lucasgentile7plus@gmail.com";
+	 const PASSWORD = "lucas2008";
+	 const NAME_FROM ="Lucas Gentile";
 
 	 private $mail;
 
@@ -50,6 +50,16 @@ class Mailer {
 				//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 				$this->mail->Port = 587;
 
+				$this->mail->isSMTP();
+
+				$this->mail->SMTPOptions = array(
+				        "ssl" => array(
+				        "verify_peer" => false,
+				        "verify_peer_name" => false,
+				        "allow_self_signed" => true
+				    )
+				);
+
 				//Set the encryption mechanism to use - STARTTLS or SMTPS
 				$this->mail->SMTPSecure = "tls";
 
@@ -87,14 +97,14 @@ class Mailer {
 				//send the message, check for errors
 				
 
-     }
+				 }
 
-     public function send() {
+				  public function send() {
 
-        return $this->mail->send();
+				    return $this->mail->send();
 
-     }
+		        }
 
-}
+			}
 
 ?>
